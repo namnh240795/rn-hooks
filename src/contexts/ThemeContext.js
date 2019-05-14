@@ -1,5 +1,15 @@
-import React from 'react';
+import React, { useReducer } from 'react';
+import { reducer, initialState } from 'src/reducers/authReducer';
 
 const ThemeContext = React.createContext();
 
-export default ThemeContext;
+const ThemeProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(reducer, initialState);
+  return (
+    <ThemeContext.Provider value={{ state, dispatch }}>
+      {children}
+    </ThemeContext.Provider>
+  );
+};
+
+export { ThemeContext, ThemeProvider };
