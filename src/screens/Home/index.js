@@ -2,11 +2,11 @@ import React, { useContext } from 'react';
 import { View, Text } from 'react-native';
 import { AuthContext } from 'src/contexts/AuthContext';
 import { types } from 'src/types';
-import { useApi } from 'src/hooks/useApi';
+// import { useApi } from 'src/hooks/useApi';
 
 const Home = () => {
   const { state, dispatch } = useContext(AuthContext);
-  const {} = useApi('/api/users', {});
+  // const {} = useApi('/api/users', {});
 
   return (
     <View>
