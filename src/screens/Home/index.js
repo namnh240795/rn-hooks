@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { View, Text } from 'react-native';
 import { AuthContext } from 'src/contexts/AuthContext';
 import { types } from 'src/types';
-// import { useApi } from 'src/hooks/useApi';
+import Login from './Login';
 
 const Home = () => {
   const { state, dispatch } = useContext(AuthContext);
@@ -21,6 +21,7 @@ const Home = () => {
         Login
       </Text>
       <Text>Token is: {state.token}</Text>
+      <Login initialValues={'Email'} submit={value => console.log('value', value)} />
     </View>
   );
 };

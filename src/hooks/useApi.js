@@ -7,7 +7,7 @@ const useApi = ({ url, config = {}, request }) => {
     error: undefined,
     isLoading: true
   });
-
+  
   const source = CancelToken.source();
 
   useEffect(() => () => {

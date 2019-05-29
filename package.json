@@ -11,6 +11,7 @@
   "dependencies": {
     "@react-native-community/async-storage": "^1.4.0",
     "apisauce": "^1.0.2",
+    "google-libphonenumber": "^3.2.2",
     "react": "16.8.3",
     "react-native": "0.59.8",
     "react-native-gesture-handler": "1.2.1",

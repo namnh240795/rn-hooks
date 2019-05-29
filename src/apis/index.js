@@ -1,8 +1,12 @@
 import { create } from 'apisauce';
-import { REQ_RES_ENDPOINT } from 'src/const';
+import { REQ_RES_ENDPOINT, END_POINT } from 'src/const';
 
 const ReqresIn = create({
   baseURL: REQ_RES_ENDPOINT
 });
 
-export { ReqresIn };
+const SuperIdApis = create({
+  baseURL: END_POINT
+});
+
+export { ReqresIn, SuperIdApis };
