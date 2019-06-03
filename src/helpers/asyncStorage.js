@@ -8,7 +8,7 @@ const storeData = async (key, item) => {
   }
 };
 
-const removeDate = async key => {
+const removeData = async key => {
   try {
     await AsyncStorage.removeItem(key);
   } catch (error) {
@@ -27,4 +27,4 @@ const retrieveData = async key => {
   }
 };
 
-export { storeData, retrieveData };
+export { storeData, retrieveData, removeData };
